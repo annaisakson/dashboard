@@ -1,0 +1,293 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+p {
+  margin: 0;
+}
+/* CLOCK */
+.clock-container {
+  background-color: rgba(234, 234, 234, 0.8);
+  height: fit-content;
+  width: fit-content;
+  margin-top: 1rem;
+  padding: 0.5em 3em;
+  border-radius: 25px;
+  display: flex;
+  box-shadow: 0 4px 8px 0 rgba(54, 54, 54, 0.2),
+    0 6px 20px 0 rgba(62, 62, 62, 0.19);
+}
+
+#clock {
+  font-family: "Libre Franklin", sans-serif;
+  margin-right: 1em;
+  font-weight: bold;
+}
+
+#date-1 {
+  font-family: "Libre Franklin", sans-serif;
+}
+
+/* HEADER */
+#header {
+  font-family: Calibri, "Trebuchet MS", sans-serif;
+  font-size: 4rem;
+  font-weight: lighter;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 0px 2px rgb(0, 0, 0);
+}
+/* CARDS */
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+h2 {
+  font-family: "Libre Franklin", sans-serif;
+  margin: 1em 0 0 0;
+}
+
+.card {
+  width: 20rem;
+  height: 25rem;
+  margin: 1rem;
+  border-radius: 20px;
+  background-color: rgba(234, 234, 234, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(54, 54, 54, 0.2),
+    0 6px 20px 0 rgba(62, 62, 62, 0.19);
+}
+
+#card-2 {
+  justify-content: flex-end;
+}
+
+#card-4 {
+  justify-content: flex-start;
+}
+
+/* LINKS-CARD, BUTTON */
+#input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.linkItem {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1em 1em;
+  background-color: white;
+  border-radius: 25px;
+  width: 18rem;
+  margin: 0.3em;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.linkItem:hover {
+  transform: scale(1.09);
+}
+
+.linkItem button {
+  color: rgb(156, 155, 155);
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  margin-left: auto;
+}
+
+.linkItem button:hover {
+  color: black;
+}
+
+.linkText {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: black;
+  margin-left: 0.8em;
+}
+
+#link-input,
+#link-name-input {
+  border-radius: 10px;
+  border: none;
+  margin: 0.1em;
+  padding: 0.3em;
+}
+
+#add-url {
+  background-color: rgba(234, 234, 234, 0.8);
+  width: fit-content;
+  margin-bottom: 1rem;
+  padding: 0.5em 1em;
+  border-radius: 25px;
+  text-align: center;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+  color: rgba(159, 159, 159);
+  border: none;
+  cursor: pointer;
+}
+
+#add-url:hover {
+  background-color: white;
+  color: rgba(159, 159, 159);
+}
+
+/* WEATHER API */
+#weather-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 20rem;
+}
+
+.weather-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 2em;
+  background-color: white;
+  border-radius: 20px;
+  width: 15rem;
+  height: 15em;
+  margin: 0.3em;
+}
+
+.weather-title {
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: lighter;
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.weather-temp {
+  font-family: sans-serif;
+  font-weight: light;
+  margin: 0.4em 0em;
+}
+
+.weather-desc {
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: 0.8em;
+}
+
+.w-icon {
+  color: #878787;
+  font-size: 3em;
+  margin-left: auto;
+  padding-bottom: 0.1em;
+}
+
+.weather-div1 {
+  margin: 0;
+}
+.weather-div2 {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+}
+
+/* DOG API */
+#card-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#dog-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1em;
+}
+
+.dogImg {
+  max-width: 18em;
+  max-height: 15em;
+  border-radius: 20px;
+  margin-bottom: 1em;
+}
+
+#dog-container p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  margin: 0;
+  padding: 0.1em;
+}
+
+/* NOTES */
+#notes {
+  resize: none;
+  width: 19rem;
+  height: 18rem;
+  padding: 1rem;
+  margin-top: 1.5em;
+  border: 2px solid #b2b1b1;
+  border-radius: 20px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+}
+
+#save {
+  padding: 0.5em 1em;
+  margin-bottom: 0.3em;
+  background-color: rgba(234, 234, 234, 0.8);
+  border-radius: 25px;
+  text-align: center;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: bold;
+  color: rgba(159, 159, 159);
+  border: none;
+  cursor: pointer;
+}
+
+#save:hover {
+  background-color: white;
+}
+
+/*RANDOM BACKGROUND BUTTON */
+#random-bg {
+  background-color: rgba(234, 234, 234, 0.8);
+  margin-bottom: 1rem;
+  padding: 0.7em 1em;
+  border-radius: 25px;
+  text-align: center;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: bold;
+  color: rgba(159, 159, 159);
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(54, 54, 54, 0.2),
+    0 6px 20px 0 rgba(62, 62, 62, 0.19);
+}
+
+#random-bg:hover {
+  background-color: white;
+  color: rgba(159, 159, 159);
+}
+
+/* HIDE ITEMS*/
+.hide {
+  display: none;
+}

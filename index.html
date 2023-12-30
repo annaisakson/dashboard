@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100&family=Montserrat:wght@300&family=Sofia+Sans+Condensed:wght@300&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Min dashboard</title>
+</head>
+
+<body>
+    <!-- KLOCKA -->
+    <div class="clock-container">
+        <div id="clock"></div>
+        <div id="date-1"></div>
+    </div>
+    <!-- HEADER -->
+    <h1 id="header" contenteditable="true">Klicka för att ändra</h1>
+
+    <main>
+        <!-- KORT  -->
+        <article class="card-container">
+            <!-- LÄNKAR -->
+            <section id="card-1" class="card">
+                <h2>Snabblänkar</h2>
+                <div id="link-container"></div>
+                <div id="input-container">
+                    <input type="text" id="link-input" placeholder="Skriv in en url..." class="hide">
+                    <input type="text" id="link-name-input" placeholder="Ge din länk ett namn" class="hide">
+                </div>
+                <button id="add-url">Lägg till ny...</button>
+            </section>
+
+            <!-- VÄDER -->
+            <section id="card-2" class="card">
+                <h2>Väder</h2>
+                <div id="weather-container"></div>
+            </section>
+
+            <!-- HUND API -->
+            <section id="card-3" class="card">
+                <h2>Dagens Doggo</h2>
+                <div id="dog-container"></div>
+            </section>
+
+            <!-- ANTECKNINGAR -->
+            <section id="card-4" class="card">
+                <h2>Anteckningar</h2>
+                <textarea name="notes" id="notes" cols="40" rows="20" spellcheck="false"
+                    placeholder="Skriv något..."></textarea>
+                <button id="save">Spara</button>
+            </section>
+        </article>
+    </main>
+
+    <!-- KNAPP FÖR NY BAKGRUND -->
+    <button id="random-bg">
+        Slumpa ny bakgrund
+    </button>
+
+    <!-- SCRIPTS -->
+    <script src="./js/clock.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/notes.js"></script>
+    <script src="./js/links.js"></script>
+    <script src="./js/dogs.js"></script>
+    <script src="./js/background.js"></script>
+    <script src="./js/weather.js"></script>
+    <script src="https://kit.fontawesome.com/c8ce5299d4.js" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
