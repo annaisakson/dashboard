@@ -45,11 +45,13 @@ p {
   color: rgb(255, 255, 255);
   text-shadow: 2px 0px 2px rgb(0, 0, 0);
 }
+
 /* CARDS */
 .card-container {
+  align-self: stretch;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
@@ -59,9 +61,9 @@ h2 {
 }
 
 .card {
-  width: 20rem;
+  width: 19em;
   height: 25rem;
-  margin: 1rem;
+  margin: 0rem 0.7rem;
   border-radius: 20px;
   background-color: rgba(234, 234, 234, 0.8);
   display: flex;
@@ -239,7 +241,7 @@ h2 {
 /* NOTES */
 #notes {
   resize: none;
-  width: 19rem;
+  width: 18rem;
   height: 18rem;
   padding: 1rem;
   margin-top: 1.5em;
