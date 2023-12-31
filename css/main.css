@@ -53,6 +53,7 @@ p {
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  margin-bottom: 0.5em;
 }
 
 h2 {
@@ -63,7 +64,7 @@ h2 {
 .card {
   width: 19em;
   height: 25rem;
-  margin: 0rem 0.7rem;
+  margin: 0.5rem 0.7rem;
   border-radius: 20px;
   background-color: rgba(234, 234, 234, 0.8);
   display: flex;
