@@ -1,5 +1,6 @@
 # dashboard
 En dashboard som du kan göra till din egen genom att lägga till en egen header, egna länkar, anteckningar och olika bakgrunder.  
+Länk till live sidan: https://annaisakson.github.io/dashboard/
 
 ## För att ändra header
 Klicka bara på texten och skriv vad du vill!  
